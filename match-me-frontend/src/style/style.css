@@ -1,0 +1,116 @@
+body {
+  background-color: #f2f6fc;
+}
+
+.homepage-bg {
+  height: calc(100vh - 56px);
+  width: 100%;
+  background-image: url('../../public/images/background.png'); /* update path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 20px 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.overlay h1 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.overlay p {
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.cta-button {
+  padding: 12px 28px;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e73370;
+}
+
+.card-img, .img-account-profile {
+  width: 200px;
+  height: 200px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+
+.card .card-header {
+    font-weight: 500;
+}
+
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+.avatar-wrapper {
+  max-width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-wrapper-profile {
+  max-width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+}
+
+.avatar-wrapper:hover .avatar-img {
+  transform: scale(1.2);
+}
